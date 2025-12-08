@@ -428,6 +428,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fd60e63e9be68e5fb56422e397cf9baddded06dae1d2e523401542383bc72a9f"
 dependencies = [
  "clap_builder 4.5.39",
+ "clap_derive 4.5.32",
 ]
 
 [[package]]
@@ -437,7 +438,7 @@ dependencies = [
  "automod",
  "clap-cargo",
  "clap_builder 4.5.53",
- "clap_derive",
+ "clap_derive 4.5.49",
  "jiff",
  "rustversion",
  "semver",
@@ -473,6 +474,7 @@ checksum = "89cc6392a1f72bbeb820d71f32108f61fdaf18bc526e1d23954168a67759ef51"
 dependencies = [
  "anstream",
  "anstyle",
+ "backtrace",
  "clap_lex 0.7.4",
  "strsim",
  "terminal_size 0.4.0",
@@ -524,6 +526,18 @@ dependencies = [
 
 [[package]]
 name = "clap_derive"
+version = "4.5.32"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "09176aae279615badda0765c0c0b3f6ed53f4709118af73cf4655d85d1530cd7"
+dependencies = [
+ "heck 0.5.0",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "clap_derive"
 version = "4.5.49"
 dependencies = [
  "anstyle",
@@ -552,7 +566,7 @@ name = "clap_mangen"
 version = "0.2.31"
 dependencies = [
  "automod",
- "clap 4.5.53",
+ "clap 4.5.39",
  "roff",
  "snapbox",
 ]
